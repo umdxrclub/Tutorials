@@ -15,23 +15,19 @@ public class SaveMalcolm : MonoBehaviour
     {
         /* Let's save Malcolm!
          */
-        
+
+        // This code will run on any frame that the space button is initially pressed down.
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            /* This code will run on any frame that the space button is initially pressed down.
+            /* Use Malcolm's components to try and save him! Malcolm has a Transform, Animator, Rigidbody, and a Capsule Collider.
+             * You can find the member variables of each of these components using the scripting reference - https://docs.unity3d.com/ScriptReference/index.html
              * 
-             * Two basic solutions are commented out below - see if you can figure out others
+             * Remember, you can get any of Malcolm's components using GetComponent<T>(), where T is the component name.
              */
 
-            // Note: you can just use "transform" as a shortcut instead of "GetComponent<Transform>()".
-            // 1: Rotate him 90 degrees
-            // transform.Rotate(0, 90, 0);
+            Debug.Log("Malcolm's brain is currently unavailable. Please help him!");
 
-            // 2: Set his drag really high
-            // GetComponent<Rigidbody>().drag = 5000;
-
-            /* Think of other ways to save Malcolm!
-             */
+            // ----- INSERT CODE HERE -----
         }
     }
 }

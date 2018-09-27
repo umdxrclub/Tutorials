@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BowlingBall : MonoBehaviour
 {
-    // This function runs once, at the beginning of the simulation.
+    // This function runs once, at the beginning of the level.
     void Start()
     {
         /* Components can be accessed from any script by using GetComponent<T>(), where T is the name of the component type.
@@ -34,6 +34,6 @@ public class BowlingBall : MonoBehaviour
          * You can also play with the mass to make the bowling ball look more realistic.
          */
 
-        GetComponent<Rigidbody>().maxAngularVelocity = 100;
+        // ----- INSERT CODE HERE -----
     }
 }

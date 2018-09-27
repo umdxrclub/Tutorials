@@ -1,12 +1,39 @@
-GameObject/Component
-Component/Monobehavior - every script is a component
+# Tutorial 2
 
-.gameObject/GetComponent() - Accessing gameobject through component, accessing component through gameobject
-Accessing component variables through scripting - GetComponent<>().useGravity, etc.
+This tutorial goes over basic unity scripting in four scenes:
 
-Start()/Update() - get game loop
+## Scene 1 - John Balls
+This scene shows the relationship between GameObjects and Components, and how Components are interchangeable and give GameObjects behavior.
 
-Exposing variables to the inspector - variables don't save in play mode, inspector values override default values in script
-Accessing variables from different scripts - back to every script is a component
+### Important concepts introduced:
+GameObject-Component relationship
 
-Vector3? Time.deltaTime?
+## Scene 2 - Bowling Alley
+This scene shows how, through scripting, Component variables can be edited dynamically. Using Rigidbody as an example, this scene shows how
+the variables in code match up with the inspector variables, and how hidden variables can only be accessed through scripting.
+
+### Important code introduced:
+GetComponent<T>(), Rigidbody, Start(), Monobehavior, Debug.Log()
+
+### Important concepts introduced:
+Scripting/Inspector reflexivity, Monobehaviors are Components
+
+## Scene 3 - Malcolm's Drunken Walk
+This scene shows how all the components' variables can be accessed in the same manner as Rigidbody's. Almost all of Malcolm's components can
+be utilized to stop him from falling in some way, so this is a creative exercise in learning how to access components.
+
+### Important code introduced:
+transform, transform.Translate(), transform.Rotate(), Vector3, Update()
+
+### Important concepts introduced:
+Using documentation, syntactical sugar
+
+## Scene 4 - Malcolm's Celebration
+This scene shows how components can hold references to each other, in order to facilitate cross-component communication. Once a script has a
+reference to another script, it can call all of that other script's public functions and access its public variables.
+
+### Important code introduced:
+None
+
+### Important concepts introduced:
+Exposing instance variables to inspector, connecting scripts via inspector, Monobehaviors are Components (again)

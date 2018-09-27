@@ -139,7 +139,7 @@ ModelImporter:
     400130: mixamorig_Spine
     400132: mixamorig_Spine1
     400134: mixamorig_Spine2
-    7400000: Take 001
+    7400000: Chicken Dance
     9500000: //RootNode
     2186277476908879412: ImportLogs
   externalObjects: {}
@@ -155,14 +155,7 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
-      copied configuration does not match position in animation file:\n\t'mixamorig_LeftUpLeg'
-      : position error = 108469.062500 mm\n\t'mixamorig_LeftLeg' : position error
-      = 387104.468750 mm\n\t'mixamorig_LeftFoot' : position error = 400094.656250
-      mm\n\t'mixamorig_LeftToeBase' : position error = 156126.125000 mm\n\t'mixamorig_RightUpLeg'
-      : position error = 108512.890625 mm\n\t'mixamorig_RightLeg' : position error
-      = 387665.312500 mm\n\t'mixamorig_RightFoot' : position error = 399385.093750
-      mm\n\t'mixamorig_RightToeBase' : position error = 156078.156250 mm\n"
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -178,7 +171,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Chicken Dance
       takeName: Take 001
       firstFrame: 0
       lastFrame: 142
@@ -195,7 +188,7 @@ ModelImporter:
       loopBlendPositionXZ: 1
       keepOriginalOrientation: 1
       keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
+      keepOriginalPositionXZ: 1
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000

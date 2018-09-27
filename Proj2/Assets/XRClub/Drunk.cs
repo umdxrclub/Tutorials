@@ -29,5 +29,9 @@ public class Drunk : MonoBehaviour
         // GetComponent<CapsuleCollider>().height += 5;
 
         // GetComponent<Animator>().enabled = false;
+
+        // transform.Rotate(0, 90, 0);
+        
+        // GetComponent<Rigidbody>().drag = 5000;
     }
 }
