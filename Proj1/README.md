@@ -10,3 +10,6 @@ None
 
 ### Important concepts introduced:
 Inspector windows, Scene/Game windows, GameObjects
+
+## Usage
+Download or pull the project.
