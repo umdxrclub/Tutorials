@@ -28,6 +28,7 @@ public class BowlingBall : MonoBehaviour
 
         /* You might have noticed that this ball rolls very slowly. This is because its maximum angular velocity is pretty low (7 I think)
          * If you look at the inspector, there is no option to set the maximum angular velocity. This must be set within the code.
+         * A list of all rigidbody's member variables and methods can be found here: https://docs.unity3d.com/ScriptReference/index.html
          * 
          * Get the rigidbody component, access the rigidbody's maximum angular velocity (named maxAngularVelocity), and set it to 100.
          * 
