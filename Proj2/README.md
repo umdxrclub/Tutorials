@@ -37,3 +37,6 @@ None
 
 ### Important concepts introduced:
 Exposing instance variables to inspector, connecting scripts via inspector, Monobehaviors are Components (again)
+
+## Usage
+Download or pull this repository. Scenes are in the Scenes/ folder, and the scripts that are supposed to be edited are in the Scripts/ folder. Anything else will be a black box for the sake of this tutorial.
