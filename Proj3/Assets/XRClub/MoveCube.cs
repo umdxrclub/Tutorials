@@ -23,5 +23,9 @@ public class MoveCube : MonoBehaviour
         {
             gameOver.EndGame();
         }
+        else if (collision.gameObject.CompareTag("Pickup"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
