@@ -23,9 +23,13 @@ public class MoveCube : MonoBehaviour
         {
             gameOver.EndGame();
         }
-        else if (collision.gameObject.CompareTag("Pickup"))
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pickup"))
         {
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
         }
     }
 }
