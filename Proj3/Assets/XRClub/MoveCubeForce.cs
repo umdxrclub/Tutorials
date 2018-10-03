@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveSphere : MonoBehaviour
+public class MoveCubeForce : MonoBehaviour
 {
     Rigidbody body;
 

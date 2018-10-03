@@ -5,11 +5,11 @@ using UnityEngine;
 public class MoveCube : MonoBehaviour
 {
     public float speed;
-    public GameOver gameOver;
+    public UIManager manager;
 
 	void Update ()
     {
-        if (!gameOver.isGameOver())
+        if (!manager.isGameOver())
         {
             Vector3 moveInput = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
@@ -21,15 +21,16 @@ public class MoveCube : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            gameOver.EndGame();
+            manager.EndGame();
         }
     }
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Pickup"))
+        if (other.gameObject.CompareTag("Pickup") && !manager.isGameOver())
         {
             Destroy(other.gameObject);
+            manager.AddPoint();
         }
     }
 }

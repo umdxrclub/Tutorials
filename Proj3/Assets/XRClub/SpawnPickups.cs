@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnPickups : MonoBehaviour
 {
     public GameObject pickup;
+    public float spawnTime;
 
     float time;
 
@@ -12,7 +13,7 @@ public class SpawnPickups : MonoBehaviour
     {
         time += Time.deltaTime;
 
-        if (time > 2)
+        if (time > spawnTime)
         {
             int randX = Mathf.FloorToInt(Random.Range(-2, 3)) * 4;
             int randZ = Mathf.FloorToInt(Random.Range(-2, 3)) * 4;

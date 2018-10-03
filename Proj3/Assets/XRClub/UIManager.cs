@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameOver : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
     public Text gameOverMessage;
+    public Text scoreBoard;
 
     bool gameOver;
 
@@ -28,5 +29,10 @@ public class GameOver : MonoBehaviour
     {
         gameOverMessage.gameObject.SetActive(true);
         gameOver = true;
+    }
+
+    public void AddPoint()
+    {
+        scoreBoard.text = "" + (int.Parse(scoreBoard.text) + 1);
     }
 }
