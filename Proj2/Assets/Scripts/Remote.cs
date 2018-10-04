@@ -15,6 +15,7 @@ public class Remote : MonoBehaviour
     public Button pauseButton;
     public Button loopButton;
     public Button resetButton;
+    public Screen scr;
 
     // ----- INSERT CODE HERE -----
 
@@ -24,21 +25,25 @@ public class Remote : MonoBehaviour
         {
             Debug.Log("Play button pressed");
             // ----- INSERT CODE HERE -----
+            scr.PlayMovie();
         }
         else if (pauseButton.isPressedDown())
         {
             Debug.Log("Pause button pressed");
             // ----- INSERT CODE HERE -----
+            scr.PauseMovie();
         }
         else if (loopButton.isPressedDown())
         {
             Debug.Log("Loop button pressed");
             // ----- INSERT CODE HERE -----
+            scr.LoopMovie();
         }
         else if (resetButton.isPressedDown())
         {
             Debug.Log("Reset button pressed");
             // ----- INSERT CODE HERE -----
+            scr.ResetMovie();
         }
     }
 }

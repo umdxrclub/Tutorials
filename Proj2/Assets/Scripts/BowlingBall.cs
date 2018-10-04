@@ -36,5 +36,7 @@ public class BowlingBall : MonoBehaviour
          */
 
         // ----- INSERT CODE HERE -----
+        GetComponent<Rigidbody>().maxAngularVelocity = 100;
+        GetComponent<Rigidbody>().mass = 100;
     }
 }

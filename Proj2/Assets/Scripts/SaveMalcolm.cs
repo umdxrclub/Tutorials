@@ -16,6 +16,16 @@ public class SaveMalcolm : MonoBehaviour
         /* Let's save Malcolm!
          */
 
+
+        if (transform.position.x < -5)
+        {
+            transform.Rotate(0, 180, 0);
+        }
+
+        Debug.Log(transform.forward);
+        Debug.Log(transform.up);
+        Debug.Log(transform.right);
+
         // This code will run on any frame that the space button is initially pressed down.
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -28,6 +38,19 @@ public class SaveMalcolm : MonoBehaviour
             Debug.Log("Malcolm's brain is currently unavailable. Please help him!");
 
             // ----- INSERT CODE HERE -----
+            //GetComponent<Transform>().position = new Vector3(-3, 0, -1.5f);
+
+            //Vector3 oldPos = GetComponent<Transform>().position;
+            //oldPos.x = 4;
+            //GetComponent<Transform>().eulerAngles = new Vector3(0, 90, 0);
+
+            //transform.Translate(1, 0, 0);
+            //transform.Rotate(0, 90, 0);
+
+            Debug.Log(transform.position);
+            Debug.Log(transform.rotation);
+            Debug.Log(transform.eulerAngles);
+
         }
     }
 }
