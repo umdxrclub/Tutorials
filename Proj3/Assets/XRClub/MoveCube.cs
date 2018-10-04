@@ -6,7 +6,7 @@ public class MoveCube : MonoBehaviour
 {
     public float speed;
     public UIManager manager;
-
+    
 	void Update ()
     {
         if (!manager.isGameOver())
