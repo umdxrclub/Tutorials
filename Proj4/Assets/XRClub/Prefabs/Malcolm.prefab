@@ -475,6 +475,7 @@ GameObject:
   - component: {fileID: 95612766005204822}
   - component: {fileID: 136921059217489732}
   - component: {fileID: 54262593048587992}
+  - component: {fileID: 114768256905141472}
   m_Layer: 0
   m_Name: Malcolm
   m_TagString: Untagged
@@ -2258,6 +2259,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114768256905141472
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1344310539779712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a075b23c7b975f4a945ff38dc608d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ragdoll: {fileID: 1076304111478128, guid: a11afac4af96ea8469045fd8467be9d2, type: 2}
 --- !u!136 &136921059217489732
 CapsuleCollider:
   m_ObjectHideFlags: 1

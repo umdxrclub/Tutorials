@@ -578,6 +578,7 @@ GameObject:
   - component: {fileID: 95761290981343188}
   - component: {fileID: 136448381041199748}
   - component: {fileID: 54354517342734704}
+  - component: {fileID: 114819537660004040}
   m_Layer: 0
   m_Name: Eve
   m_TagString: Untagged
@@ -1990,6 +1991,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114819537660004040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1554799372925344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a075b23c7b975f4a945ff38dc608d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ragdoll: {fileID: 1010567566246712, guid: 2cb53ed4e9fb33448b0a7098cd56c4be, type: 2}
 --- !u!136 &136448381041199748
 CapsuleCollider:
   m_ObjectHideFlags: 1

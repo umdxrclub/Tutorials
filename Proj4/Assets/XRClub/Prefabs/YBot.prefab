@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 95188965188175610}
   - component: {fileID: 136043366962327924}
   - component: {fileID: 54280942610732960}
+  - component: {fileID: 114717967548180226}
   m_Layer: 0
   m_Name: YBot
   m_TagString: Untagged
@@ -2079,6 +2080,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114717967548180226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1230242638310438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a075b23c7b975f4a945ff38dc608d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ragdoll: {fileID: 1700219848635190, guid: f63e389683ab6b14787251d511fdf601, type: 2}
 --- !u!136 &136043366962327924
 CapsuleCollider:
   m_ObjectHideFlags: 1

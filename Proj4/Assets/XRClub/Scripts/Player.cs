@@ -36,5 +36,8 @@ public class Player : MonoBehaviour
     public void Damage(float damage)
     {
         health -= damage;
+
+        if (health <= 0)
+            GetComponent<Ragdoll>().SpawnRagdoll();
     }
 }
