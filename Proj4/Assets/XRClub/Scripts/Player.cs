@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -36,8 +37,18 @@ public class Player : MonoBehaviour
     public void Damage(float damage)
     {
         health -= damage;
+        Image healthBar = FindObjectsOfType<Image>()[2];
+
+        healthBar.fillAmount = health / maxHealth;
 
         if (health <= 0)
+        {
+            GameObject item = CharacterSelect.FindRecursive(transform, CharacterData.leftHand.name + "(Clone)").gameObject;
+            item.transform.parent = null;
+            item.transform.position = CharacterSelect.FindRecursive(transform, GetComponent<LeftHand>().handName).position;
+            item.AddComponent<Rigidbody>();
+
             GetComponent<Ragdoll>().SpawnRagdoll();
+        }
     }
 }

@@ -1002,6 +1002,7 @@ GameObject:
   - component: {fileID: 136166294744085024}
   - component: {fileID: 54275792302929730}
   - component: {fileID: 114941387840047806}
+  - component: {fileID: 114574951121389326}
   m_Layer: 0
   m_Name: Paladin
   m_TagString: Untagged
@@ -2139,6 +2140,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114574951121389326
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1913056180804346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f176c88d39cbe4b9e33de0400ce9ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handName: LeftHand
 --- !u!114 &114941387840047806
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -579,6 +579,7 @@ GameObject:
   - component: {fileID: 136448381041199748}
   - component: {fileID: 54354517342734704}
   - component: {fileID: 114819537660004040}
+  - component: {fileID: 114048777176807216}
   m_Layer: 0
   m_Name: Eve
   m_TagString: Untagged
@@ -1991,6 +1992,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114048777176807216
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1554799372925344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f176c88d39cbe4b9e33de0400ce9ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handName: LeftHand
 --- !u!114 &114819537660004040
 MonoBehaviour:
   m_ObjectHideFlags: 1

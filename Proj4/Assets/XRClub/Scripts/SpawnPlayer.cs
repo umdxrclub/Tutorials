@@ -8,8 +8,12 @@ public class SpawnPlayer : MonoBehaviour
     {
 	    if (CharacterData.character != null)
         {
-            GameObject GO = Instantiate(CharacterData.character, new Vector3(0, 0.5f, 0), Quaternion.Euler(Vector3.zero));
-            GO.AddComponent<Player>();
+            GameObject player = Instantiate(CharacterData.character, new Vector3(0, 0.5f, 0), Quaternion.Euler(Vector3.zero));
+
+            Transform leftHand = CharacterSelect.FindRecursive(player.transform, player.GetComponent<LeftHand>().handName);
+            Instantiate(CharacterData.leftHand, leftHand);
+
+            player.AddComponent<Player>();
         }
         else
         {

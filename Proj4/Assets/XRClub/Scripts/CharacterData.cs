@@ -5,4 +5,5 @@ using UnityEngine;
 public static class CharacterData
 {
     public static GameObject character;
+    public static GameObject leftHand;
 }
