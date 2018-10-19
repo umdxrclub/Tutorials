@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 114169913484007880}
   - component: {fileID: 114574930159701032}
   m_Layer: 0
-  m_Name: Explosion
+  m_Name: ExplosionTEST
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ac1691131a8c844dafe8b6ace6a172a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionForce: 4
+  explosionForce: 500
 --- !u!198 &198054336608657806
 ParticleSystem:
   m_ObjectHideFlags: 1

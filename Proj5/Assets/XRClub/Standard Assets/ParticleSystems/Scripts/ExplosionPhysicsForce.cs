@@ -18,7 +18,7 @@ namespace UnityStandardAssets.Effects
 
             float multiplier = GetComponent<ParticleSystemMultiplier>().multiplier;
 
-            float r = 10*multiplier;
+            float r = 50*multiplier;
             var cols = Physics.OverlapSphere(transform.position, r);
             var rigidbodies = new List<Rigidbody>();
             foreach (var col in cols)
@@ -26,6 +26,7 @@ namespace UnityStandardAssets.Effects
                 if (col.attachedRigidbody != null && !rigidbodies.Contains(col.attachedRigidbody))
                 {
                     rigidbodies.Add(col.attachedRigidbody);
+                    //col.gameObject.GetComponent<Chase>().exploded = true;
                 }
             }
             foreach (var rb in rigidbodies)

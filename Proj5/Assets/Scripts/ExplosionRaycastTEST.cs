@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExplosionRaycast : MonoBehaviour {
+public class ExplosionRaycastTEST : MonoBehaviour {
 
     public GameObject explosion;
     public Camera MainCamera;
+    public float dist = 1000.0f;
+
     private RaycastHit hit;
 
 
@@ -15,7 +17,7 @@ public class ExplosionRaycast : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("MOUSE BUTTON");
-            if (Physics.Raycast(MainCamera.ScreenPointToRay(Input.mousePosition), out hit, 100.0f))
+            if (Physics.Raycast(MainCamera.ScreenPointToRay(Input.mousePosition), out hit, dist))
             {
                 Instantiate(explosion, hit.point, Quaternion.identity);
             }
