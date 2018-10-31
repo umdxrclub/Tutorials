@@ -15,8 +15,7 @@ public class Move : MonoBehaviour
 
     void Update ()
     {
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        transform.Translate(movement * Time.deltaTime * speed);
+        transform.Translate(new Vector3(0, 0, Input.GetAxis("Forwards")) * Time.deltaTime * speed);
         transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0));
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -26,7 +25,7 @@ public class Move : MonoBehaviour
         {
             anim.SetTrigger("Jump");
         }
-
-        anim.SetFloat("Speed", movement.magnitude);
+        
+        anim.SetBool("Moving", Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow));
 	}
 }
